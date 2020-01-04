@@ -33,8 +33,7 @@ $theme-orange: (
 
 $primary: mat-palette($theme-purple);
 $accent: mat-palette($theme-teal);
-$warn: mat-pallette($theme-orange);
-
+$warn: mat-palette($theme-orange);
 
 $theme: mat-light-theme($primary, $accent, $warn);
 
