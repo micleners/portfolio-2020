@@ -8,5 +8,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [],
   imports: [MatIconModule, MatToolbarModule, CommonModule, RouterModule, FlexLayoutModule],
+  exports: [MatIconModule, MatToolbarModule, CommonModule, RouterModule, FlexLayoutModule],
 })
 export class MaterialImportsModule {}

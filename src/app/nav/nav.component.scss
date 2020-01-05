@@ -1,0 +1,48 @@
+@import '~src/variables';
+
+mat-toolbar {
+  background: rgba(256, 256, 256, 0.16);
+  padding-left: 0px;
+
+  @media (max-width: 900px) and (min-width: 480px) {
+    height: 32px;
+  }
+
+  @media (max-width: 480px) {
+    height: 32px;
+    padding-right: 0px;
+  }
+}
+
+.nav-icon {
+  padding: 2.5% 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.nav-right {
+  padding-left: 10px;
+}
+
+.nav-item {
+  font-size: 35px;
+  letter-spacing: 0.01em;
+  padding: 5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.87);
+  height: 100%;
+
+  @media (max-width: 900px) {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    padding: 5px 1px;
+  }
+}
+
+.nav-left {
+  height: 100%;
+}
