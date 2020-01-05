@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class NavComponent implements OnInit {
   isHomeRoute: boolean;
 
-  constructor(private router: Router) {}
+  constructor(public router: Router) {}
 
   ngOnInit() {
     this.isHomeRoute = this.router.url === '/';

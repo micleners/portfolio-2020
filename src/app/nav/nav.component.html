@@ -1,28 +1,49 @@
 <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
-  <div class="nav-left" fxLayout="row">
+  <a class="nav-left" fxLayout="row" routerLink="/">
     <img class="nav-icon" src="assets/logo.svg" alt="Fun icon for my website" />
     <div
       class="nav-item"
-      [ngClass]="{ active: isHomeRoute }"
+      [ngClass]="{ active: router.isActive('', true) }"
       fxHide.lt-sm="true"
       fxLayout
       fxLayoutAlign="center center"
     >
       Michael Leners
-    </div>
+  </div>
     <div
       class="nav-item"
-      [ngClass]="{ active: isHomeRoute }"
+      [ngClass]="{ active: router.isActive('', true) }"
       fxHide.gt-xs="true"
       fxLayout
       fxLayoutAlign="center center"
     >
       micLeners
     </div>
-  </div>
-  <div class="nav-right" fxLayoutGap="5px" fxLayoutGap.lt-md="0px" fxLayout="row">
-    <div class="nav-item">Projects</div>
-    <div class="nav-item">Talks</div>
-    <div class="nav-item">Blog</div>
+  </a>
+  <div class="nav-right" fxLayoutGap="10px" fxLayoutGap.lt-md="0px" fxLayout="row">
+    <a
+      class="nav-item"
+      fxLayoutAlign="center center"
+      [ngClass]="{ active: router.isActive('projects', true) }"
+      routerLink="/projects"
+    >
+      Projects
+    </a>
+    <a
+      fxLayoutAlign="center center"
+      class="nav-item"
+      [ngClass]="{ active: router.isActive('talks', true) }"
+      routerLink="/talks"
+    >
+      Talks
+    </a>
+    <a
+      class="nav-item"
+      fxLayoutAlign="center center"
+      [ngClass]="{ active: router.isActive('blog', true) }"
+      routerLink="/blog"
+    >
+      Blog
+    </a>
   </div>
 </mat-toolbar>

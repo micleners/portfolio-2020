@@ -20,14 +20,24 @@ mat-toolbar {
   height: 100%;
 }
 
+.nav-item:focus, .nav-left:focus {
+  outline: 0;
+}
+
 .nav-right {
   padding-left: 5px;
 }
 
+.nav-left {
+  text-decoration: none;
+}
+
 .nav-item {
+  text-decoration: none;
   font-size: 35px;
   letter-spacing: 0.01em;
-  padding: 5px;
+  padding: 10px;
+  box-sizing: border-box;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.87);
   height: 100%;
@@ -47,6 +57,6 @@ mat-toolbar {
   }
 }
 
-.nav-left {
+.nav-left, .nav-right {
   height: 100%;
 }
