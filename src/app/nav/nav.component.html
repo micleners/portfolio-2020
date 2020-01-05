@@ -1,10 +1,26 @@
 <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
   <div class="nav-left" fxLayout="row">
     <img class="nav-icon" src="assets/logo.svg" alt="Fun icon for my website" />
-    <div class="nav-item active" fxHide.lt-sm="true" fxLayout fxLayoutAlign="center center">Michael Leners</div>
-    <div class="nav-item active" fxHide.gt-xs="true" fxLayout fxLayoutAlign="center center">micLeners</div>
+    <div
+      class="nav-item"
+      [ngClass]="{ active: isHomeRoute }"
+      fxHide.lt-sm="true"
+      fxLayout
+      fxLayoutAlign="center center"
+    >
+      Michael Leners
+    </div>
+    <div
+      class="nav-item"
+      [ngClass]="{ active: isHomeRoute }"
+      fxHide.gt-xs="true"
+      fxLayout
+      fxLayoutAlign="center center"
+    >
+      micLeners
+    </div>
   </div>
-  <div class="nav-right" fxLayoutGap="5px" fxLayoutGap.fxLayout.lt-md="2px" fxLayout="row">
+  <div class="nav-right" fxLayoutGap="5px" fxLayoutGap.lt-md="0px" fxLayout="row">
     <div class="nav-item">Projects</div>
     <div class="nav-item">Talks</div>
     <div class="nav-item">Blog</div>
